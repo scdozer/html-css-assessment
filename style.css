@@ -1,0 +1,90 @@
+body {
+  background: url(img/main-bg.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 95vh;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+header {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Desktop Nav */
+.navigation_dsk{
+  display: flex;
+  justify-content: space-between;
+}
+.navigation_dsk a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+/* Mobile Nav */
+.hamburger {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.social{margin-top: 8px;}
+.social a{text-decoration: none;}
+.social img {height: 28px; width: auto;}
+
+
+
+
+/* Content */
+.hero_content{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+}
+.hero_content h2 {
+  color: #fff;
+  font-size: 28px;
+  line-height: 25px;
+}
+.hero_content h2 span {font-size: 100px;}
+
+.down_arrow {
+  position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  color: gray;
+  background: white;
+  font-size: 24px;
+  border-radius: 50%;
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  bottom: 20px;
+  padding-top: 10px;
+}
+
+
+/* Make Navigation switch out */
+.navigation_mobile {display: none;}
+@media (max-width: 768px) {
+  .navigation_dsk {display: none;}
+  .navigation_mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+}
